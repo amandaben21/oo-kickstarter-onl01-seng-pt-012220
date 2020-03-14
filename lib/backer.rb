@@ -11,7 +11,7 @@ class Backer
     pbs.map {|pb| pb.project}
   end
 
-  def back_project(project)
+  def backed_project(project)
     ProjectBacker.new(project, self)
   end
 
